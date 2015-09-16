@@ -1,6 +1,6 @@
 ﻿namespace CommonGeometryFormulasCalculator
 {
-    partial class Form1
+    partial class lblRhombusB
     {
         /// <summary>
         /// Required designer variable.
@@ -34,11 +34,51 @@
             this.grpAP = new System.Windows.Forms.GroupBox();
             this.grpShape = new System.Windows.Forms.GroupBox();
             this.rdoRectangle = new System.Windows.Forms.RadioButton();
-            this.txtWidth = new System.Windows.Forms.TextBox();
-            this.txtLength = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblAnswer = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.lblPerimeter = new System.Windows.Forms.Label();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.lblPerimeterAnswer = new System.Windows.Forms.Label();
+            this.lblAreaAnswer = new System.Windows.Forms.Label();
+            this.txtRectL = new System.Windows.Forms.TextBox();
+            this.txtRectW = new System.Windows.Forms.TextBox();
+            this.lblRectL = new System.Windows.Forms.Label();
+            this.lblRectW = new System.Windows.Forms.Label();
+            this.rdoSquare = new System.Windows.Forms.RadioButton();
+            this.lblSquareS = new System.Windows.Forms.Label();
+            this.txtSquareS = new System.Windows.Forms.TextBox();
+            this.rdoParallelogram = new System.Windows.Forms.RadioButton();
+            this.rdoRhombus = new System.Windows.Forms.RadioButton();
+            this.rdoTriangle = new System.Windows.Forms.RadioButton();
+            this.rdoTrapezoid = new System.Windows.Forms.RadioButton();
+            this.rdoCircle = new System.Windows.Forms.RadioButton();
+            this.lblParallelogramA = new System.Windows.Forms.Label();
+            this.lblParallelogramB = new System.Windows.Forms.Label();
+            this.lblParallelogramH = new System.Windows.Forms.Label();
+            this.txtParallelogramA = new System.Windows.Forms.TextBox();
+            this.txtParallelogramB = new System.Windows.Forms.TextBox();
+            this.txtParallelgramH = new System.Windows.Forms.TextBox();
+            this.txtRhombusB = new System.Windows.Forms.TextBox();
+            this.txtRhombusH = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblRhombusH = new System.Windows.Forms.Label();
+            this.lblTrapezoidD = new System.Windows.Forms.Label();
+            this.lblTrapezoidC = new System.Windows.Forms.Label();
+            this.txtTrapezoidD = new System.Windows.Forms.TextBox();
+            this.txtTrapezoidC = new System.Windows.Forms.TextBox();
+            this.txtTrapezoidH = new System.Windows.Forms.TextBox();
+            this.txtTrapezoidB = new System.Windows.Forms.TextBox();
+            this.txtTrapezoidA = new System.Windows.Forms.TextBox();
+            this.lblTrapezoidH = new System.Windows.Forms.Label();
+            this.lblTrapezoidB = new System.Windows.Forms.Label();
+            this.lblTrapezoidA = new System.Windows.Forms.Label();
+            this.lblTriangleH = new System.Windows.Forms.Label();
+            this.lblTriangleB = new System.Windows.Forms.Label();
+            this.txtTriangleH = new System.Windows.Forms.TextBox();
+            this.txtTriangleB = new System.Windows.Forms.TextBox();
+            this.txtCircleR = new System.Windows.Forms.TextBox();
+            this.lblCircleR = new System.Windows.Forms.Label();
             this.grpAP.SuspendLayout();
             this.grpShape.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +121,7 @@
             this.grpAP.Controls.Add(this.rdoAreaPerimeter);
             this.grpAP.Controls.Add(this.rdoArea);
             this.grpAP.Controls.Add(this.rdoPerimeter);
-            this.grpAP.Location = new System.Drawing.Point(12, 134);
+            this.grpAP.Location = new System.Drawing.Point(506, 248);
             this.grpAP.Name = "grpAP";
             this.grpAP.Size = new System.Drawing.Size(287, 48);
             this.grpAP.TabIndex = 3;
@@ -89,12 +129,51 @@
             // 
             // grpShape
             // 
+            this.grpShape.Controls.Add(this.txtCircleR);
+            this.grpShape.Controls.Add(this.lblCircleR);
+            this.grpShape.Controls.Add(this.lblTriangleH);
+            this.grpShape.Controls.Add(this.lblTriangleB);
+            this.grpShape.Controls.Add(this.txtTriangleH);
+            this.grpShape.Controls.Add(this.txtTriangleB);
+            this.grpShape.Controls.Add(this.txtTrapezoidH);
+            this.grpShape.Controls.Add(this.txtTrapezoidB);
+            this.grpShape.Controls.Add(this.txtTrapezoidA);
+            this.grpShape.Controls.Add(this.lblTrapezoidH);
+            this.grpShape.Controls.Add(this.lblTrapezoidB);
+            this.grpShape.Controls.Add(this.lblTrapezoidA);
+            this.grpShape.Controls.Add(this.lblTrapezoidD);
+            this.grpShape.Controls.Add(this.lblTrapezoidC);
+            this.grpShape.Controls.Add(this.txtTrapezoidD);
+            this.grpShape.Controls.Add(this.txtTrapezoidC);
+            this.grpShape.Controls.Add(this.lblRhombusH);
+            this.grpShape.Controls.Add(this.label1);
+            this.grpShape.Controls.Add(this.txtRhombusH);
+            this.grpShape.Controls.Add(this.txtRhombusB);
+            this.grpShape.Controls.Add(this.txtParallelgramH);
+            this.grpShape.Controls.Add(this.txtParallelogramB);
+            this.grpShape.Controls.Add(this.txtParallelogramA);
+            this.grpShape.Controls.Add(this.lblParallelogramH);
+            this.grpShape.Controls.Add(this.lblParallelogramB);
+            this.grpShape.Controls.Add(this.lblParallelogramA);
+            this.grpShape.Controls.Add(this.rdoCircle);
+            this.grpShape.Controls.Add(this.rdoTrapezoid);
+            this.grpShape.Controls.Add(this.rdoTriangle);
+            this.grpShape.Controls.Add(this.rdoRhombus);
+            this.grpShape.Controls.Add(this.rdoParallelogram);
+            this.grpShape.Controls.Add(this.txtSquareS);
+            this.grpShape.Controls.Add(this.lblSquareS);
+            this.grpShape.Controls.Add(this.lblRectW);
+            this.grpShape.Controls.Add(this.rdoSquare);
+            this.grpShape.Controls.Add(this.lblRectL);
             this.grpShape.Controls.Add(this.rdoRectangle);
+            this.grpShape.Controls.Add(this.txtRectW);
+            this.grpShape.Controls.Add(this.txtRectL);
             this.grpShape.Location = new System.Drawing.Point(12, 12);
             this.grpShape.Name = "grpShape";
-            this.grpShape.Size = new System.Drawing.Size(934, 100);
+            this.grpShape.Size = new System.Drawing.Size(934, 187);
             this.grpShape.TabIndex = 3;
             this.grpShape.TabStop = false;
+            this.grpShape.Enter += new System.EventHandler(this.grpShape_Enter);
             // 
             // rdoRectangle
             // 
@@ -106,61 +185,422 @@
             this.rdoRectangle.TabStop = true;
             this.rdoRectangle.Text = "Rectangle";
             this.rdoRectangle.UseVisualStyleBackColor = true;
+            this.rdoRectangle.CheckedChanged += new System.EventHandler(this.rdoRectangle_CheckedChanged);
             // 
-            // txtWidth
+            // button1
             // 
-            this.txtWidth.Location = new System.Drawing.Point(199, 207);
-            this.txtWidth.Name = "txtWidth";
-            this.txtWidth.Size = new System.Drawing.Size(100, 20);
-            this.txtWidth.TabIndex = 4;
+            this.button1.Location = new System.Drawing.Point(32, 300);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Calculate";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtLength
+            // button2
             // 
-            this.txtLength.Location = new System.Drawing.Point(12, 207);
-            this.txtLength.Name = "txtLength";
-            this.txtLength.Size = new System.Drawing.Size(100, 20);
-            this.txtLength.TabIndex = 5;
+            this.button2.Location = new System.Drawing.Point(182, 300);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnCalculate
+            // button3
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(12, 233);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 6;
-            this.btnCalculate.Text = "Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            this.button3.Location = new System.Drawing.Point(330, 300);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // lblPerimeter
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 283);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.lblPerimeter.AutoSize = true;
+            this.lblPerimeter.Location = new System.Drawing.Point(218, 202);
+            this.lblPerimeter.Name = "lblPerimeter";
+            this.lblPerimeter.Size = new System.Drawing.Size(57, 13);
+            this.lblPerimeter.TabIndex = 7;
+            this.lblPerimeter.Text = "Perimeter: ";
             // 
-            // lblAnswer
+            // lblArea
             // 
-            this.lblAnswer.AutoSize = true;
-            this.lblAnswer.Location = new System.Drawing.Point(157, 290);
-            this.lblAnswer.Name = "lblAnswer";
-            this.lblAnswer.Size = new System.Drawing.Size(42, 13);
-            this.lblAnswer.TabIndex = 8;
-            this.lblAnswer.Text = "Answer";
+            this.lblArea.AutoSize = true;
+            this.lblArea.Location = new System.Drawing.Point(240, 230);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(35, 13);
+            this.lblArea.TabIndex = 8;
+            this.lblArea.Text = "Area: ";
             // 
-            // Form1
+            // lblPerimeterAnswer
+            // 
+            this.lblPerimeterAnswer.AutoSize = true;
+            this.lblPerimeterAnswer.Location = new System.Drawing.Point(282, 202);
+            this.lblPerimeterAnswer.Name = "lblPerimeterAnswer";
+            this.lblPerimeterAnswer.Size = new System.Drawing.Size(42, 13);
+            this.lblPerimeterAnswer.TabIndex = 9;
+            this.lblPerimeterAnswer.Text = "Answer";
+            // 
+            // lblAreaAnswer
+            // 
+            this.lblAreaAnswer.AutoSize = true;
+            this.lblAreaAnswer.Location = new System.Drawing.Point(282, 230);
+            this.lblAreaAnswer.Name = "lblAreaAnswer";
+            this.lblAreaAnswer.Size = new System.Drawing.Size(42, 13);
+            this.lblAreaAnswer.TabIndex = 10;
+            this.lblAreaAnswer.Text = "Answer";
+            // 
+            // txtRectL
+            // 
+            this.txtRectL.Location = new System.Drawing.Point(37, 53);
+            this.txtRectL.Name = "txtRectL";
+            this.txtRectL.Size = new System.Drawing.Size(39, 20);
+            this.txtRectL.TabIndex = 12;
+            this.txtRectL.Visible = false;
+            this.txtRectL.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtRectW
+            // 
+            this.txtRectW.Location = new System.Drawing.Point(37, 83);
+            this.txtRectW.Name = "txtRectW";
+            this.txtRectW.Size = new System.Drawing.Size(39, 20);
+            this.txtRectW.TabIndex = 13;
+            this.txtRectW.Visible = false;
+            // 
+            // lblRectL
+            // 
+            this.lblRectL.AutoSize = true;
+            this.lblRectL.Location = new System.Drawing.Point(16, 56);
+            this.lblRectL.Name = "lblRectL";
+            this.lblRectL.Size = new System.Drawing.Size(15, 13);
+            this.lblRectL.TabIndex = 14;
+            this.lblRectL.Text = "l: ";
+            this.lblRectL.Visible = false;
+            this.lblRectL.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblRectW
+            // 
+            this.lblRectW.AutoSize = true;
+            this.lblRectW.Location = new System.Drawing.Point(16, 86);
+            this.lblRectW.Name = "lblRectW";
+            this.lblRectW.Size = new System.Drawing.Size(21, 13);
+            this.lblRectW.TabIndex = 15;
+            this.lblRectW.Text = "w: ";
+            this.lblRectW.Visible = false;
+            // 
+            // rdoSquare
+            // 
+            this.rdoSquare.AutoSize = true;
+            this.rdoSquare.Location = new System.Drawing.Point(100, 30);
+            this.rdoSquare.Name = "rdoSquare";
+            this.rdoSquare.Size = new System.Drawing.Size(59, 17);
+            this.rdoSquare.TabIndex = 1;
+            this.rdoSquare.TabStop = true;
+            this.rdoSquare.Text = "Square";
+            this.rdoSquare.UseVisualStyleBackColor = true;
+            this.rdoSquare.CheckedChanged += new System.EventHandler(this.rdoSquare_CheckedChanged);
+            // 
+            // lblSquareS
+            // 
+            this.lblSquareS.AutoSize = true;
+            this.lblSquareS.Location = new System.Drawing.Point(98, 50);
+            this.lblSquareS.Name = "lblSquareS";
+            this.lblSquareS.Size = new System.Drawing.Size(18, 13);
+            this.lblSquareS.TabIndex = 16;
+            this.lblSquareS.Text = "s: ";
+            this.lblSquareS.Visible = false;
+            // 
+            // txtSquareS
+            // 
+            this.txtSquareS.Location = new System.Drawing.Point(122, 51);
+            this.txtSquareS.Name = "txtSquareS";
+            this.txtSquareS.Size = new System.Drawing.Size(37, 20);
+            this.txtSquareS.TabIndex = 17;
+            this.txtSquareS.Visible = false;
+            // 
+            // rdoParallelogram
+            // 
+            this.rdoParallelogram.AutoSize = true;
+            this.rdoParallelogram.Location = new System.Drawing.Point(175, 30);
+            this.rdoParallelogram.Name = "rdoParallelogram";
+            this.rdoParallelogram.Size = new System.Drawing.Size(88, 17);
+            this.rdoParallelogram.TabIndex = 18;
+            this.rdoParallelogram.TabStop = true;
+            this.rdoParallelogram.Text = "Parallelogram";
+            this.rdoParallelogram.UseVisualStyleBackColor = true;
+            // 
+            // rdoRhombus
+            // 
+            this.rdoRhombus.AutoSize = true;
+            this.rdoRhombus.Location = new System.Drawing.Point(273, 30);
+            this.rdoRhombus.Name = "rdoRhombus";
+            this.rdoRhombus.Size = new System.Drawing.Size(70, 17);
+            this.rdoRhombus.TabIndex = 19;
+            this.rdoRhombus.TabStop = true;
+            this.rdoRhombus.Text = "Rhombus";
+            this.rdoRhombus.UseVisualStyleBackColor = true;
+            // 
+            // rdoTriangle
+            // 
+            this.rdoTriangle.AutoSize = true;
+            this.rdoTriangle.Location = new System.Drawing.Point(361, 30);
+            this.rdoTriangle.Name = "rdoTriangle";
+            this.rdoTriangle.Size = new System.Drawing.Size(63, 17);
+            this.rdoTriangle.TabIndex = 20;
+            this.rdoTriangle.TabStop = true;
+            this.rdoTriangle.Text = "Triangle";
+            this.rdoTriangle.UseVisualStyleBackColor = true;
+            // 
+            // rdoTrapezoid
+            // 
+            this.rdoTrapezoid.AutoSize = true;
+            this.rdoTrapezoid.Location = new System.Drawing.Point(554, 30);
+            this.rdoTrapezoid.Name = "rdoTrapezoid";
+            this.rdoTrapezoid.Size = new System.Drawing.Size(72, 17);
+            this.rdoTrapezoid.TabIndex = 21;
+            this.rdoTrapezoid.TabStop = true;
+            this.rdoTrapezoid.Text = "Trapezoid";
+            this.rdoTrapezoid.UseVisualStyleBackColor = true;
+            // 
+            // rdoCircle
+            // 
+            this.rdoCircle.AutoSize = true;
+            this.rdoCircle.Location = new System.Drawing.Point(670, 30);
+            this.rdoCircle.Name = "rdoCircle";
+            this.rdoCircle.Size = new System.Drawing.Size(51, 17);
+            this.rdoCircle.TabIndex = 22;
+            this.rdoCircle.TabStop = true;
+            this.rdoCircle.Text = "Circle";
+            this.rdoCircle.UseVisualStyleBackColor = true;
+            // 
+            // lblParallelogramA
+            // 
+            this.lblParallelogramA.AutoSize = true;
+            this.lblParallelogramA.Location = new System.Drawing.Point(172, 55);
+            this.lblParallelogramA.Name = "lblParallelogramA";
+            this.lblParallelogramA.Size = new System.Drawing.Size(19, 13);
+            this.lblParallelogramA.TabIndex = 23;
+            this.lblParallelogramA.Text = "a: ";
+            // 
+            // lblParallelogramB
+            // 
+            this.lblParallelogramB.AutoSize = true;
+            this.lblParallelogramB.Location = new System.Drawing.Point(172, 79);
+            this.lblParallelogramB.Name = "lblParallelogramB";
+            this.lblParallelogramB.Size = new System.Drawing.Size(19, 13);
+            this.lblParallelogramB.TabIndex = 24;
+            this.lblParallelogramB.Text = "b: ";
+            // 
+            // lblParallelogramH
+            // 
+            this.lblParallelogramH.AutoSize = true;
+            this.lblParallelogramH.Location = new System.Drawing.Point(172, 105);
+            this.lblParallelogramH.Name = "lblParallelogramH";
+            this.lblParallelogramH.Size = new System.Drawing.Size(19, 13);
+            this.lblParallelogramH.TabIndex = 25;
+            this.lblParallelogramH.Text = "h: ";
+            // 
+            // txtParallelogramA
+            // 
+            this.txtParallelogramA.Location = new System.Drawing.Point(198, 47);
+            this.txtParallelogramA.Name = "txtParallelogramA";
+            this.txtParallelogramA.Size = new System.Drawing.Size(32, 20);
+            this.txtParallelogramA.TabIndex = 26;
+            // 
+            // txtParallelogramB
+            // 
+            this.txtParallelogramB.Location = new System.Drawing.Point(198, 79);
+            this.txtParallelogramB.Name = "txtParallelogramB";
+            this.txtParallelogramB.Size = new System.Drawing.Size(32, 20);
+            this.txtParallelogramB.TabIndex = 27;
+            // 
+            // txtParallelgramH
+            // 
+            this.txtParallelgramH.Location = new System.Drawing.Point(198, 106);
+            this.txtParallelgramH.Name = "txtParallelgramH";
+            this.txtParallelgramH.Size = new System.Drawing.Size(32, 20);
+            this.txtParallelgramH.TabIndex = 28;
+            // 
+            // txtRhombusB
+            // 
+            this.txtRhombusB.Location = new System.Drawing.Point(295, 53);
+            this.txtRhombusB.Name = "txtRhombusB";
+            this.txtRhombusB.Size = new System.Drawing.Size(37, 20);
+            this.txtRhombusB.TabIndex = 29;
+            // 
+            // txtRhombusH
+            // 
+            this.txtRhombusH.Location = new System.Drawing.Point(295, 83);
+            this.txtRhombusH.Name = "txtRhombusH";
+            this.txtRhombusH.Size = new System.Drawing.Size(37, 20);
+            this.txtRhombusH.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(270, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 13);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "b: ";
+            // 
+            // lblRhombusH
+            // 
+            this.lblRhombusH.AutoSize = true;
+            this.lblRhombusH.Location = new System.Drawing.Point(270, 79);
+            this.lblRhombusH.Name = "lblRhombusH";
+            this.lblRhombusH.Size = new System.Drawing.Size(19, 13);
+            this.lblRhombusH.TabIndex = 32;
+            this.lblRhombusH.Text = "h: ";
+            // 
+            // lblTrapezoidD
+            // 
+            this.lblTrapezoidD.AutoSize = true;
+            this.lblTrapezoidD.Location = new System.Drawing.Point(555, 139);
+            this.lblTrapezoidD.Name = "lblTrapezoidD";
+            this.lblTrapezoidD.Size = new System.Drawing.Size(19, 13);
+            this.lblTrapezoidD.TabIndex = 38;
+            this.lblTrapezoidD.Text = "d: ";
+            // 
+            // lblTrapezoidC
+            // 
+            this.lblTrapezoidC.AutoSize = true;
+            this.lblTrapezoidC.Location = new System.Drawing.Point(555, 109);
+            this.lblTrapezoidC.Name = "lblTrapezoidC";
+            this.lblTrapezoidC.Size = new System.Drawing.Size(19, 13);
+            this.lblTrapezoidC.TabIndex = 37;
+            this.lblTrapezoidC.Text = "c: ";
+            // 
+            // txtTrapezoidD
+            // 
+            this.txtTrapezoidD.Location = new System.Drawing.Point(584, 132);
+            this.txtTrapezoidD.Name = "txtTrapezoidD";
+            this.txtTrapezoidD.Size = new System.Drawing.Size(37, 20);
+            this.txtTrapezoidD.TabIndex = 36;
+            // 
+            // txtTrapezoidC
+            // 
+            this.txtTrapezoidC.Location = new System.Drawing.Point(584, 109);
+            this.txtTrapezoidC.Name = "txtTrapezoidC";
+            this.txtTrapezoidC.Size = new System.Drawing.Size(37, 20);
+            this.txtTrapezoidC.TabIndex = 35;
+            // 
+            // txtTrapezoidH
+            // 
+            this.txtTrapezoidH.Location = new System.Drawing.Point(581, 163);
+            this.txtTrapezoidH.Name = "txtTrapezoidH";
+            this.txtTrapezoidH.Size = new System.Drawing.Size(32, 20);
+            this.txtTrapezoidH.TabIndex = 44;
+            // 
+            // txtTrapezoidB
+            // 
+            this.txtTrapezoidB.Location = new System.Drawing.Point(581, 81);
+            this.txtTrapezoidB.Name = "txtTrapezoidB";
+            this.txtTrapezoidB.Size = new System.Drawing.Size(32, 20);
+            this.txtTrapezoidB.TabIndex = 43;
+            // 
+            // txtTrapezoidA
+            // 
+            this.txtTrapezoidA.Location = new System.Drawing.Point(581, 49);
+            this.txtTrapezoidA.Name = "txtTrapezoidA";
+            this.txtTrapezoidA.Size = new System.Drawing.Size(32, 20);
+            this.txtTrapezoidA.TabIndex = 42;
+            // 
+            // lblTrapezoidH
+            // 
+            this.lblTrapezoidH.AutoSize = true;
+            this.lblTrapezoidH.Location = new System.Drawing.Point(555, 162);
+            this.lblTrapezoidH.Name = "lblTrapezoidH";
+            this.lblTrapezoidH.Size = new System.Drawing.Size(19, 13);
+            this.lblTrapezoidH.TabIndex = 41;
+            this.lblTrapezoidH.Text = "h: ";
+            // 
+            // lblTrapezoidB
+            // 
+            this.lblTrapezoidB.AutoSize = true;
+            this.lblTrapezoidB.Location = new System.Drawing.Point(555, 81);
+            this.lblTrapezoidB.Name = "lblTrapezoidB";
+            this.lblTrapezoidB.Size = new System.Drawing.Size(19, 13);
+            this.lblTrapezoidB.TabIndex = 40;
+            this.lblTrapezoidB.Text = "b: ";
+            // 
+            // lblTrapezoidA
+            // 
+            this.lblTrapezoidA.AutoSize = true;
+            this.lblTrapezoidA.Location = new System.Drawing.Point(555, 57);
+            this.lblTrapezoidA.Name = "lblTrapezoidA";
+            this.lblTrapezoidA.Size = new System.Drawing.Size(19, 13);
+            this.lblTrapezoidA.TabIndex = 39;
+            this.lblTrapezoidA.Text = "a: ";
+            // 
+            // lblTriangleH
+            // 
+            this.lblTriangleH.AutoSize = true;
+            this.lblTriangleH.Location = new System.Drawing.Point(358, 85);
+            this.lblTriangleH.Name = "lblTriangleH";
+            this.lblTriangleH.Size = new System.Drawing.Size(19, 13);
+            this.lblTriangleH.TabIndex = 48;
+            this.lblTriangleH.Text = "h: ";
+            // 
+            // lblTriangleB
+            // 
+            this.lblTriangleB.AutoSize = true;
+            this.lblTriangleB.Location = new System.Drawing.Point(358, 56);
+            this.lblTriangleB.Name = "lblTriangleB";
+            this.lblTriangleB.Size = new System.Drawing.Size(19, 13);
+            this.lblTriangleB.TabIndex = 47;
+            this.lblTriangleB.Text = "b: ";
+            // 
+            // txtTriangleH
+            // 
+            this.txtTriangleH.Location = new System.Drawing.Point(383, 89);
+            this.txtTriangleH.Name = "txtTriangleH";
+            this.txtTriangleH.Size = new System.Drawing.Size(37, 20);
+            this.txtTriangleH.TabIndex = 46;
+            // 
+            // txtTriangleB
+            // 
+            this.txtTriangleB.Location = new System.Drawing.Point(383, 59);
+            this.txtTriangleB.Name = "txtTriangleB";
+            this.txtTriangleB.Size = new System.Drawing.Size(37, 20);
+            this.txtTriangleB.TabIndex = 45;
+            // 
+            // txtCircleR
+            // 
+            this.txtCircleR.Location = new System.Drawing.Point(691, 56);
+            this.txtCircleR.Name = "txtCircleR";
+            this.txtCircleR.Size = new System.Drawing.Size(37, 20);
+            this.txtCircleR.TabIndex = 50;
+            this.txtCircleR.Visible = false;
+            // 
+            // lblCircleR
+            // 
+            this.lblCircleR.AutoSize = true;
+            this.lblCircleR.Location = new System.Drawing.Point(667, 55);
+            this.lblCircleR.Name = "lblCircleR";
+            this.lblCircleR.Size = new System.Drawing.Size(16, 13);
+            this.lblCircleR.TabIndex = 49;
+            this.lblCircleR.Text = "r: ";
+            this.lblCircleR.Visible = false;
+            // 
+            // lblRhombusB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 646);
-            this.Controls.Add(this.lblAnswer);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.txtLength);
-            this.Controls.Add(this.txtWidth);
+            this.Controls.Add(this.lblAreaAnswer);
+            this.Controls.Add(this.lblPerimeterAnswer);
+            this.Controls.Add(this.lblArea);
+            this.Controls.Add(this.lblPerimeter);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grpShape);
             this.Controls.Add(this.grpAP);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "lblRhombusB";
+            this.Text = "b: ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grpAP.ResumeLayout(false);
             this.grpAP.PerformLayout();
             this.grpShape.ResumeLayout(false);
@@ -178,11 +618,51 @@
         private System.Windows.Forms.GroupBox grpAP;
         private System.Windows.Forms.GroupBox grpShape;
         private System.Windows.Forms.RadioButton rdoRectangle;
-        private System.Windows.Forms.TextBox txtWidth;
-        private System.Windows.Forms.TextBox txtLength;
-        private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblPerimeter;
+        private System.Windows.Forms.Label lblArea;
+        private System.Windows.Forms.Label lblPerimeterAnswer;
+        private System.Windows.Forms.Label lblAreaAnswer;
+        private System.Windows.Forms.TextBox txtRectL;
+        private System.Windows.Forms.TextBox txtRectW;
+        private System.Windows.Forms.Label lblRectL;
+        private System.Windows.Forms.Label lblRectW;
+        private System.Windows.Forms.TextBox txtSquareS;
+        private System.Windows.Forms.Label lblSquareS;
+        private System.Windows.Forms.RadioButton rdoSquare;
+        private System.Windows.Forms.RadioButton rdoRhombus;
+        private System.Windows.Forms.RadioButton rdoParallelogram;
+        private System.Windows.Forms.Label lblParallelogramH;
+        private System.Windows.Forms.Label lblParallelogramB;
+        private System.Windows.Forms.Label lblParallelogramA;
+        private System.Windows.Forms.RadioButton rdoCircle;
+        private System.Windows.Forms.RadioButton rdoTrapezoid;
+        private System.Windows.Forms.RadioButton rdoTriangle;
+        private System.Windows.Forms.Label lblRhombusH;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtRhombusH;
+        private System.Windows.Forms.TextBox txtRhombusB;
+        private System.Windows.Forms.TextBox txtParallelgramH;
+        private System.Windows.Forms.TextBox txtParallelogramB;
+        private System.Windows.Forms.TextBox txtParallelogramA;
+        private System.Windows.Forms.TextBox txtTrapezoidH;
+        private System.Windows.Forms.TextBox txtTrapezoidB;
+        private System.Windows.Forms.TextBox txtTrapezoidA;
+        private System.Windows.Forms.Label lblTrapezoidH;
+        private System.Windows.Forms.Label lblTrapezoidB;
+        private System.Windows.Forms.Label lblTrapezoidA;
+        private System.Windows.Forms.Label lblTrapezoidD;
+        private System.Windows.Forms.Label lblTrapezoidC;
+        private System.Windows.Forms.TextBox txtTrapezoidD;
+        private System.Windows.Forms.TextBox txtTrapezoidC;
+        private System.Windows.Forms.TextBox txtCircleR;
+        private System.Windows.Forms.Label lblCircleR;
+        private System.Windows.Forms.Label lblTriangleH;
+        private System.Windows.Forms.Label lblTriangleB;
+        private System.Windows.Forms.TextBox txtTriangleH;
+        private System.Windows.Forms.TextBox txtTriangleB;
     }
 }
 
