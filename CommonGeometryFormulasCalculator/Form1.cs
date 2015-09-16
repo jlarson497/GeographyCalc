@@ -68,40 +68,92 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoRectangle_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdoRectangle.Checked)
-            {
-                txtRectL.Visible = true;
-                txtRectW.Visible = true;
-                lblRectL.Visible = true;
-                lblRectW.Visible = true;
-            }
-            else
-            {
-                txtRectL.Visible = false;
-                txtRectW.Visible = false;
-                lblRectL.Visible = false;
-                lblRectW.Visible = false;
-            }
+            lblRectL.Visible = !lblRectL.Visible;
+            lblRectW.Visible = !lblRectW.Visible;
+            txtRectL.Visible = !txtRectL.Visible;
+            txtRectW.Visible = !txtRectW.Visible;
         }
 
         private void rdoSquare_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdoSquare.Checked)
-            {
-                txtSquareS.Visible = true;
-                lblSquareS.Visible = true;
-            }
-            else
-            {
-                txtSquareS.Visible = false;
-                lblSquareS.Visible = false;
-            }
-            
+            lblSquareS.Visible = !lblSquareS.Visible;
+            txtSquareS.Visible = !txtSquareS.Visible;
         }
 
         private void grpShape_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void rdoParallelogram_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            lblParallelogramA.Visible = !lblParallelogramA.Visible;
+            lblParallelogramB.Visible = !lblParallelogramB.Visible;
+            lblParallelogramH.Visible = !lblParallelogramH.Visible;
+            txtParallelogramA.Visible = !txtParallelogramA.Visible;
+            txtParallelogramB.Visible = !txtParallelogramB.Visible;
+            txtParallelogramH.Visible = !txtParallelogramH.Visible;  
+
+        }
+
+        private void rdoRhombus_CheckedChanged(object sender, EventArgs e)
+        {
+            lblRhombusH.Visible = !lblRhombusH.Visible;
+            lblRhombusBase.Visible = !lblRhombusBase.Visible;
+            txtRhombusB.Visible = !txtRhombusB.Visible;
+            txtRhombusH.Visible = !txtRhombusH.Visible;
+
+        }
+
+        private void rdoTriangle_CheckedChanged(object sender, EventArgs e)
+        {
+            lblTriangleB.Visible = !lblTriangleB.Visible;
+            lblTriangleH.Visible = !lblTriangleH.Visible;
+            txtTriangleB.Visible = !txtTriangleB.Visible;
+            txtTriangleH.Visible = !txtTriangleH.Visible;
+        }
+
+        private void rdoTrapezoid_CheckedChanged(object sender, EventArgs e)
+        {
+            lblTrapezoidA.Visible = !lblTrapezoidA.Visible;
+            lblTrapezoidB.Visible = !lblTrapezoidB.Visible;
+            lblTrapezoidC.Visible = !lblTrapezoidC.Visible;
+            lblTrapezoidD.Visible = !lblTrapezoidD.Visible;
+            lblTrapezoidH.Visible = !lblTrapezoidH.Visible;
+            txtTrapezoidA.Visible = !txtTrapezoidA.Visible;
+            txtTrapezoidB.Visible = !txtTrapezoidB.Visible;
+            txtTrapezoidC.Visible = !txtTrapezoidC.Visible;
+            txtTrapezoidD.Visible = !txtTrapezoidD.Visible;
+            txtTrapezoidH.Visible = !txtTrapezoidH.Visible;
+
+
+        }
+
+        private void rdoCircle_CheckedChanged(object sender, EventArgs e)
+        {
+            lblCircleR.Visible = !lblCircleR.Visible;
+            txtCircleR.Visible = !txtCircleR.Visible;
+        }
+
+        private void rdoArea_CheckedChanged(object sender, EventArgs e)
+        {
+            lblArea.Visible = !lblArea.Visible;
+            lblAreaAnswer.Visible = !lblAreaAnswer.Visible;
+        }
+
+        private void rdoPerimeter_CheckedChanged(object sender, EventArgs e)
+        {
+            lblPerimeter.Visible = !lblPerimeter.Visible;
+            lblPerimeterAnswer.Visible = !lblPerimeterAnswer.Visible;
+        }
+
+        private void rdoAreaPerimeter_CheckedChanged(object sender, EventArgs e)
+        {
+            lblPerimeter.Visible = !lblPerimeter.Visible;
+            lblPerimeterAnswer.Visible = !lblPerimeterAnswer.Visible;
+            lblArea.Visible = !lblArea.Visible;
+            lblAreaAnswer.Visible = !lblAreaAnswer.Visible;
         }
 
         
