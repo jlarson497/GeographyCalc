@@ -626,9 +626,9 @@
             // picboxShape
             // 
             this.picboxShape.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picboxShape.Location = new System.Drawing.Point(20, 129);
+            this.picboxShape.Location = new System.Drawing.Point(20, 126);
             this.picboxShape.Name = "picboxShape";
-            this.picboxShape.Size = new System.Drawing.Size(312, 153);
+            this.picboxShape.Size = new System.Drawing.Size(312, 156);
             this.picboxShape.TabIndex = 51;
             this.picboxShape.TabStop = false;
             // 
