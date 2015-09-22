@@ -68,6 +68,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoRectangle_CheckedChanged(object sender, EventArgs e)
         {
+            picboxShape.BackgroundImage = Properties.Resources.Rectangle;
             lblRectL.Visible = !lblRectL.Visible;
             lblRectW.Visible = !lblRectW.Visible;
             txtRectL.Visible = !txtRectL.Visible;
@@ -76,6 +77,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoSquare_CheckedChanged(object sender, EventArgs e)
         {
+            picboxShape.BackgroundImage = Properties.Resources.Square;
             lblSquareS.Visible = !lblSquareS.Visible;
             txtSquareS.Visible = !txtSquareS.Visible;
         }
@@ -87,7 +89,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoParallelogram_CheckedChanged(object sender, EventArgs e)
         {
-            
+            picboxShape.BackgroundImage = Properties.Resources.Parallelogram;
             lblParallelogramA.Visible = !lblParallelogramA.Visible;
             lblParallelogramB.Visible = !lblParallelogramB.Visible;
             lblParallelogramH.Visible = !lblParallelogramH.Visible;
@@ -99,6 +101,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoRhombus_CheckedChanged(object sender, EventArgs e)
         {
+            picboxShape.BackgroundImage = Properties.Resources.Rhombus;
             lblRhombusH.Visible = !lblRhombusH.Visible;
             lblRhombusBase.Visible = !lblRhombusBase.Visible;
             txtRhombusB.Visible = !txtRhombusB.Visible;
@@ -108,6 +111,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoTriangle_CheckedChanged(object sender, EventArgs e)
         {
+            picboxShape.BackgroundImage = Properties.Resources.Triangle;
             lblTriangleB.Visible = !lblTriangleB.Visible;
             lblTriangleH.Visible = !lblTriangleH.Visible;
             txtTriangleB.Visible = !txtTriangleB.Visible;
@@ -116,6 +120,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoTrapezoid_CheckedChanged(object sender, EventArgs e)
         {
+            picboxShape.BackgroundImage = Properties.Resources.Trapezoid;
             lblTrapezoidA.Visible = !lblTrapezoidA.Visible;
             lblTrapezoidB.Visible = !lblTrapezoidB.Visible;
             lblTrapezoidC.Visible = !lblTrapezoidC.Visible;
@@ -132,6 +137,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoCircle_CheckedChanged(object sender, EventArgs e)
         {
+            picboxShape.BackgroundImage = Properties.Resources.Circle;
             lblCircleR.Visible = !lblCircleR.Visible;
             txtCircleR.Visible = !txtCircleR.Visible;
         }
