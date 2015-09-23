@@ -16,7 +16,7 @@ namespace CommonGeometryFormulasCalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new lblRhombusB());
+            Application.Run(new frmGeometryCalculator());
         }
     }
 }

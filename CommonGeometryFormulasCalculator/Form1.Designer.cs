@@ -1,6 +1,6 @@
 ﻿namespace CommonGeometryFormulasCalculator
 {
-    partial class lblRhombusB
+    partial class frmGeometryCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -94,6 +94,13 @@
             this.txtRandomNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.txtPercentage = new System.Windows.Forms.TextBox();
+            this.txtPercentageAns = new System.Windows.Forms.TextBox();
+            this.btnPercentage = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.grpAP.SuspendLayout();
             this.grpShape.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxShape)).BeginInit();
@@ -209,7 +216,7 @@
             this.txtCircleR.Location = new System.Drawing.Point(551, 50);
             this.txtCircleR.Name = "txtCircleR";
             this.txtCircleR.Size = new System.Drawing.Size(37, 20);
-            this.txtCircleR.TabIndex = 50;
+            this.txtCircleR.TabIndex = 16;
             this.txtCircleR.Visible = false;
             // 
             // lblCircleR
@@ -247,7 +254,7 @@
             this.txtTriangleH.Location = new System.Drawing.Point(383, 89);
             this.txtTriangleH.Name = "txtTriangleH";
             this.txtTriangleH.Size = new System.Drawing.Size(37, 20);
-            this.txtTriangleH.TabIndex = 46;
+            this.txtTriangleH.TabIndex = 10;
             this.txtTriangleH.Visible = false;
             // 
             // txtTriangleB
@@ -255,7 +262,7 @@
             this.txtTriangleB.Location = new System.Drawing.Point(383, 59);
             this.txtTriangleB.Name = "txtTriangleB";
             this.txtTriangleB.Size = new System.Drawing.Size(37, 20);
-            this.txtTriangleB.TabIndex = 45;
+            this.txtTriangleB.TabIndex = 9;
             this.txtTriangleB.Visible = false;
             // 
             // txtTrapezoidH
@@ -263,7 +270,7 @@
             this.txtTrapezoidH.Location = new System.Drawing.Point(474, 149);
             this.txtTrapezoidH.Name = "txtTrapezoidH";
             this.txtTrapezoidH.Size = new System.Drawing.Size(37, 20);
-            this.txtTrapezoidH.TabIndex = 44;
+            this.txtTrapezoidH.TabIndex = 15;
             this.txtTrapezoidH.Visible = false;
             // 
             // txtTrapezoidB
@@ -271,7 +278,7 @@
             this.txtTrapezoidB.Location = new System.Drawing.Point(474, 76);
             this.txtTrapezoidB.Name = "txtTrapezoidB";
             this.txtTrapezoidB.Size = new System.Drawing.Size(37, 20);
-            this.txtTrapezoidB.TabIndex = 43;
+            this.txtTrapezoidB.TabIndex = 12;
             this.txtTrapezoidB.Visible = false;
             // 
             // txtTrapezoidA
@@ -279,7 +286,7 @@
             this.txtTrapezoidA.Location = new System.Drawing.Point(474, 53);
             this.txtTrapezoidA.Name = "txtTrapezoidA";
             this.txtTrapezoidA.Size = new System.Drawing.Size(37, 20);
-            this.txtTrapezoidA.TabIndex = 42;
+            this.txtTrapezoidA.TabIndex = 11;
             this.txtTrapezoidA.Visible = false;
             // 
             // lblTrapezoidH
@@ -337,7 +344,7 @@
             this.txtTrapezoidD.Location = new System.Drawing.Point(474, 126);
             this.txtTrapezoidD.Name = "txtTrapezoidD";
             this.txtTrapezoidD.Size = new System.Drawing.Size(37, 20);
-            this.txtTrapezoidD.TabIndex = 36;
+            this.txtTrapezoidD.TabIndex = 14;
             this.txtTrapezoidD.Visible = false;
             // 
             // txtTrapezoidC
@@ -345,7 +352,7 @@
             this.txtTrapezoidC.Location = new System.Drawing.Point(474, 102);
             this.txtTrapezoidC.Name = "txtTrapezoidC";
             this.txtTrapezoidC.Size = new System.Drawing.Size(37, 20);
-            this.txtTrapezoidC.TabIndex = 35;
+            this.txtTrapezoidC.TabIndex = 13;
             this.txtTrapezoidC.Visible = false;
             // 
             // lblRhombusH
@@ -373,7 +380,7 @@
             this.txtRhombusH.Location = new System.Drawing.Point(295, 83);
             this.txtRhombusH.Name = "txtRhombusH";
             this.txtRhombusH.Size = new System.Drawing.Size(37, 20);
-            this.txtRhombusH.TabIndex = 30;
+            this.txtRhombusH.TabIndex = 8;
             this.txtRhombusH.Visible = false;
             // 
             // txtRhombusB
@@ -381,7 +388,7 @@
             this.txtRhombusB.Location = new System.Drawing.Point(295, 53);
             this.txtRhombusB.Name = "txtRhombusB";
             this.txtRhombusB.Size = new System.Drawing.Size(37, 20);
-            this.txtRhombusB.TabIndex = 29;
+            this.txtRhombusB.TabIndex = 7;
             this.txtRhombusB.Visible = false;
             // 
             // txtParallelogramH
@@ -389,7 +396,7 @@
             this.txtParallelogramH.Location = new System.Drawing.Point(197, 102);
             this.txtParallelogramH.Name = "txtParallelogramH";
             this.txtParallelogramH.Size = new System.Drawing.Size(37, 20);
-            this.txtParallelogramH.TabIndex = 28;
+            this.txtParallelogramH.TabIndex = 6;
             this.txtParallelogramH.Visible = false;
             // 
             // txtParallelogramB
@@ -397,7 +404,7 @@
             this.txtParallelogramB.Location = new System.Drawing.Point(197, 76);
             this.txtParallelogramB.Name = "txtParallelogramB";
             this.txtParallelogramB.Size = new System.Drawing.Size(37, 20);
-            this.txtParallelogramB.TabIndex = 27;
+            this.txtParallelogramB.TabIndex = 5;
             this.txtParallelogramB.Visible = false;
             // 
             // txtParallelogramA
@@ -405,7 +412,7 @@
             this.txtParallelogramA.Location = new System.Drawing.Point(197, 52);
             this.txtParallelogramA.Name = "txtParallelogramA";
             this.txtParallelogramA.Size = new System.Drawing.Size(37, 20);
-            this.txtParallelogramA.TabIndex = 26;
+            this.txtParallelogramA.TabIndex = 4;
             this.txtParallelogramA.Visible = false;
             // 
             // lblParallelogramH
@@ -503,7 +510,7 @@
             this.txtSquareS.Location = new System.Drawing.Point(121, 52);
             this.txtSquareS.Name = "txtSquareS";
             this.txtSquareS.Size = new System.Drawing.Size(37, 20);
-            this.txtSquareS.TabIndex = 17;
+            this.txtSquareS.TabIndex = 3;
             this.txtSquareS.Visible = false;
             // 
             // lblSquareS
@@ -566,7 +573,7 @@
             this.txtRectW.Location = new System.Drawing.Point(38, 75);
             this.txtRectW.Name = "txtRectW";
             this.txtRectW.Size = new System.Drawing.Size(37, 20);
-            this.txtRectW.TabIndex = 13;
+            this.txtRectW.TabIndex = 2;
             this.txtRectW.Visible = false;
             // 
             // txtRectL
@@ -574,7 +581,7 @@
             this.txtRectL.Location = new System.Drawing.Point(38, 52);
             this.txtRectL.Name = "txtRectL";
             this.txtRectL.Size = new System.Drawing.Size(37, 20);
-            this.txtRectL.TabIndex = 12;
+            this.txtRectL.TabIndex = 1;
             this.txtRectL.Visible = false;
             this.txtRectL.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -591,10 +598,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(581, 611);
+            this.btnExit.Location = new System.Drawing.Point(535, 611);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 6;
+            this.btnExit.TabIndex = 15;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -652,7 +659,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(209, 475);
+            this.label1.Location = new System.Drawing.Point(206, 475);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 11;
@@ -661,7 +668,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 501);
+            this.label2.Location = new System.Drawing.Point(216, 501);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 12;
@@ -670,7 +677,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(211, 529);
+            this.label3.Location = new System.Drawing.Point(208, 529);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 13;
@@ -678,32 +685,33 @@
             // 
             // txtDividend
             // 
-            this.txtDividend.Location = new System.Drawing.Point(270, 472);
+            this.txtDividend.Location = new System.Drawing.Point(267, 472);
             this.txtDividend.Name = "txtDividend";
             this.txtDividend.Size = new System.Drawing.Size(31, 20);
-            this.txtDividend.TabIndex = 14;
+            this.txtDividend.TabIndex = 9;
             // 
             // txtDivisor
             // 
-            this.txtDivisor.Location = new System.Drawing.Point(270, 501);
+            this.txtDivisor.Location = new System.Drawing.Point(267, 501);
             this.txtDivisor.Name = "txtDivisor";
             this.txtDivisor.Size = new System.Drawing.Size(31, 20);
-            this.txtDivisor.TabIndex = 15;
+            this.txtDivisor.TabIndex = 10;
             // 
             // txtModulo
             // 
-            this.txtModulo.Location = new System.Drawing.Point(270, 526);
+            this.txtModulo.Location = new System.Drawing.Point(267, 526);
             this.txtModulo.Name = "txtModulo";
             this.txtModulo.ReadOnly = true;
             this.txtModulo.Size = new System.Drawing.Size(31, 20);
             this.txtModulo.TabIndex = 16;
+            this.txtModulo.TabStop = false;
             // 
             // btnModulo
             // 
-            this.btnModulo.Location = new System.Drawing.Point(209, 554);
+            this.btnModulo.Location = new System.Drawing.Point(206, 554);
             this.btnModulo.Name = "btnModulo";
             this.btnModulo.Size = new System.Drawing.Size(108, 23);
-            this.btnModulo.TabIndex = 17;
+            this.btnModulo.TabIndex = 11;
             this.btnModulo.Text = "Calculate Modulus";
             this.btnModulo.UseVisualStyleBackColor = true;
             this.btnModulo.Click += new System.EventHandler(this.btnModulo_Click);
@@ -711,7 +719,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(455, 475);
+            this.label4.Location = new System.Drawing.Point(370, 475);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 13);
             this.label4.TabIndex = 18;
@@ -720,7 +728,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(518, 504);
+            this.label5.Location = new System.Drawing.Point(433, 504);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(25, 13);
             this.label5.TabIndex = 19;
@@ -728,29 +736,31 @@
             // 
             // txtRandomTop
             // 
-            this.txtRandomTop.Location = new System.Drawing.Point(550, 497);
+            this.txtRandomTop.Location = new System.Drawing.Point(465, 497);
             this.txtRandomTop.Name = "txtRandomTop";
             this.txtRandomTop.Size = new System.Drawing.Size(50, 20);
-            this.txtRandomTop.TabIndex = 20;
+            this.txtRandomTop.TabIndex = 13;
             // 
             // txtRandomBot
             // 
-            this.txtRandomBot.Location = new System.Drawing.Point(458, 498);
+            this.txtRandomBot.Location = new System.Drawing.Point(373, 498);
             this.txtRandomBot.Name = "txtRandomBot";
             this.txtRandomBot.Size = new System.Drawing.Size(50, 20);
-            this.txtRandomBot.TabIndex = 21;
+            this.txtRandomBot.TabIndex = 12;
             // 
             // txtRandomNumber
             // 
-            this.txtRandomNumber.Location = new System.Drawing.Point(554, 556);
+            this.txtRandomNumber.Location = new System.Drawing.Point(469, 556);
             this.txtRandomNumber.Name = "txtRandomNumber";
+            this.txtRandomNumber.ReadOnly = true;
             this.txtRandomNumber.Size = new System.Drawing.Size(45, 20);
             this.txtRandomNumber.TabIndex = 22;
+            this.txtRandomNumber.TabStop = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(455, 559);
+            this.label6.Location = new System.Drawing.Point(370, 559);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 23;
@@ -758,21 +768,89 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(458, 526);
+            this.btnGenerate.Location = new System.Drawing.Point(373, 526);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(104, 23);
-            this.btnGenerate.TabIndex = 24;
+            this.btnGenerate.TabIndex = 14;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
-            // lblRhombusB
+            // txtNum1
+            // 
+            this.txtNum1.Location = new System.Drawing.Point(71, 472);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(52, 20);
+            this.txtNum1.TabIndex = 6;
+            // 
+            // txtPercentage
+            // 
+            this.txtPercentage.Location = new System.Drawing.Point(71, 500);
+            this.txtPercentage.Name = "txtPercentage";
+            this.txtPercentage.Size = new System.Drawing.Size(52, 20);
+            this.txtPercentage.TabIndex = 7;
+            this.txtPercentage.TextChanged += new System.EventHandler(this.txtPercentage_TextChanged);
+            // 
+            // txtPercentageAns
+            // 
+            this.txtPercentageAns.Location = new System.Drawing.Point(71, 528);
+            this.txtPercentageAns.Name = "txtPercentageAns";
+            this.txtPercentageAns.ReadOnly = true;
+            this.txtPercentageAns.Size = new System.Drawing.Size(50, 20);
+            this.txtPercentageAns.TabIndex = 26;
+            this.txtPercentageAns.TabStop = false;
+            // 
+            // btnPercentage
+            // 
+            this.btnPercentage.Location = new System.Drawing.Point(12, 556);
+            this.btnPercentage.Name = "btnPercentage";
+            this.btnPercentage.Size = new System.Drawing.Size(138, 23);
+            this.btnPercentage.TabIndex = 8;
+            this.btnPercentage.Text = "Calculate Percentage";
+            this.btnPercentage.UseVisualStyleBackColor = true;
+            this.btnPercentage.Click += new System.EventHandler(this.btnPercentage_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 475);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Number: ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 503);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Percent: ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(15, 531);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Answer: ";
+            // 
+            // frmGeometryCalculator
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(668, 646);
+            this.ClientSize = new System.Drawing.Size(639, 646);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnPercentage);
+            this.Controls.Add(this.txtPercentageAns);
+            this.Controls.Add(this.txtPercentage);
+            this.Controls.Add(this.txtNum1);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtRandomNumber);
@@ -796,7 +874,7 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.grpShape);
             this.Controls.Add(this.grpAP);
-            this.Name = "lblRhombusB";
+            this.Name = "frmGeometryCalculator";
             this.Text = "Geometry Calculater Plus!";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpAP.ResumeLayout(false);
@@ -877,6 +955,13 @@
         private System.Windows.Forms.TextBox txtRandomNumber;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.TextBox txtNum1;
+        private System.Windows.Forms.TextBox txtPercentage;
+        private System.Windows.Forms.TextBox txtPercentageAns;
+        private System.Windows.Forms.Button btnPercentage;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
 

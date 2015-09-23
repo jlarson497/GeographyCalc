@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace CommonGeometryFormulasCalculator
 {
-    public partial class lblRhombusB : Form
+    public partial class frmGeometryCalculator : Form
     {
 
-        public lblRhombusB()
+        public frmGeometryCalculator()
         {
             InitializeComponent();
 
@@ -206,12 +206,15 @@ namespace CommonGeometryFormulasCalculator
 
         private int modulusMath(int dividend, int divisor)
         {
+            //This method returns the remainder of 2 integers divided by one another
             int modulo = dividend % divisor;
             return modulo;
         }
 
         private int randomGenerator(int bottom, int top)
         {
+            //This method generates a random number with a range and returns the value
+
             Random random = new Random();
             int randomNumber = random.Next(bottom, top);
             return randomNumber;
@@ -219,6 +222,9 @@ namespace CommonGeometryFormulasCalculator
 
         private void btnModulo_Click(object sender, EventArgs e)
         {
+            //Click event for modulus.  Takes the user input and performs modulus division using the 
+            //modulusMath method, returns an int into a txtbox and returns the focus to the first 
+            //modulus division textbox
             int dividend = Convert.ToInt16(txtDividend.Text);
             int divisor = Convert.ToInt16(txtDivisor.Text);
 
@@ -231,6 +237,8 @@ namespace CommonGeometryFormulasCalculator
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            //Click event for the random number generator.  Takes the values from the user input and generates a 
+            //random number between them.  Returns an integer and returns the focus to the bottom of the range
             int bottom = Convert.ToInt16(txtRandomBot.Text);
             int top = Convert.ToInt16(txtRandomTop.Text);
 
@@ -239,5 +247,31 @@ namespace CommonGeometryFormulasCalculator
             txtRandomBot.Focus();
         }
 
+        public decimal Percentage(decimal a, decimal b)
+        {
+            decimal val1 = a;
+            decimal val2 = b;
+
+            decimal ans = (val1 / 100) * val2;
+            
+            return ans;
+        }
+
+        private void btnPercentage_Click(object sender, EventArgs e)
+        {
+            decimal a = Convert.ToDecimal(txtNum1.Text);
+            decimal b = Convert.ToDecimal(txtPercentage.Text);
+
+            decimal answer = Percentage(a, b);
+
+            txtPercentageAns.Text = Convert.ToString(answer);
+            txtNum1.Focus();
+
+        }
+
+        private void txtPercentage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
