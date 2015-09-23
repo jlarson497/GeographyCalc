@@ -7,6 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*******************************
+ *This is a Geometry calculator that allows a user to calculate the area and perimeter of a few basic shapes.
+ *It also includes a few unrelated, extra features because the boss likes to require extra work for no apparent
+ *reason.  There are several radio buttons that allow a user to choose their desired shape, decide what they want
+ *to calculate (area, perimeter, or both), and then textboxes to input the values for the necessary measurments.
+ *It also displays a picture of each shape with the corresponding variable names for each side/measurement.
+ *
+ * Robert Masen, Carlos Lopez, Joseph Larson
+ *******************************/
 
 namespace CommonGeometryFormulasCalculator
 {
@@ -249,6 +258,7 @@ namespace CommonGeometryFormulasCalculator
 
         public decimal Percentage(decimal a, decimal b)
         {
+            //method that calculates the percentage of an initial value
             decimal val1 = a;
             decimal val2 = b;
 
@@ -259,6 +269,7 @@ namespace CommonGeometryFormulasCalculator
 
         private void btnPercentage_Click(object sender, EventArgs e)
         {
+            //Click event for the calculate percentage button
             decimal a = Convert.ToDecimal(txtNum1.Text);
             decimal b = Convert.ToDecimal(txtPercentage.Text);
 
