@@ -54,11 +54,28 @@ namespace CommonGeometryFormulasCalculator
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void clearText()
         {
-            
-
+            txtSquareS.Clear();
+            txtTrapezoidA.Clear();
+            txtTrapezoidB.Clear();
+            txtTrapezoidC.Clear();
+            txtTrapezoidD.Clear();
+            txtTrapezoidH.Clear();
+            txtRectL.Clear();
+            txtRectW.Clear();
+            txtRhombusB.Clear();
+            txtRhombusH.Clear();
+            txtTriangleB.Clear();
+            txtTriangleH.Clear();
+            txtCircleR.Clear();
+            txtParallelogramA.Clear();
+            txtParallelogramB.Clear();
+            txtParallelogramH.Clear();
+        }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            clearText();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -73,6 +90,7 @@ namespace CommonGeometryFormulasCalculator
             lblRectW.Visible = !lblRectW.Visible;
             txtRectL.Visible = !txtRectL.Visible;
             txtRectW.Visible = !txtRectW.Visible;
+            clearText();
         }
 
         private void rdoSquare_CheckedChanged(object sender, EventArgs e)
@@ -80,6 +98,7 @@ namespace CommonGeometryFormulasCalculator
             picboxShape.BackgroundImage = Properties.Resources.Square;
             lblSquareS.Visible = !lblSquareS.Visible;
             txtSquareS.Visible = !txtSquareS.Visible;
+            clearText();
         }
 
         private void grpShape_Enter(object sender, EventArgs e)
@@ -95,8 +114,8 @@ namespace CommonGeometryFormulasCalculator
             lblParallelogramH.Visible = !lblParallelogramH.Visible;
             txtParallelogramA.Visible = !txtParallelogramA.Visible;
             txtParallelogramB.Visible = !txtParallelogramB.Visible;
-            txtParallelogramH.Visible = !txtParallelogramH.Visible;  
-
+            txtParallelogramH.Visible = !txtParallelogramH.Visible;
+            clearText();
         }
 
         private void rdoRhombus_CheckedChanged(object sender, EventArgs e)
@@ -106,6 +125,7 @@ namespace CommonGeometryFormulasCalculator
             lblRhombusBase.Visible = !lblRhombusBase.Visible;
             txtRhombusB.Visible = !txtRhombusB.Visible;
             txtRhombusH.Visible = !txtRhombusH.Visible;
+            clearText();
 
         }
 
@@ -116,6 +136,7 @@ namespace CommonGeometryFormulasCalculator
             lblTriangleH.Visible = !lblTriangleH.Visible;
             txtTriangleB.Visible = !txtTriangleB.Visible;
             txtTriangleH.Visible = !txtTriangleH.Visible;
+            clearText();
         }
 
         private void rdoTrapezoid_CheckedChanged(object sender, EventArgs e)
@@ -131,6 +152,7 @@ namespace CommonGeometryFormulasCalculator
             txtTrapezoidC.Visible = !txtTrapezoidC.Visible;
             txtTrapezoidD.Visible = !txtTrapezoidD.Visible;
             txtTrapezoidH.Visible = !txtTrapezoidH.Visible;
+            clearText();
 
 
         }
@@ -140,6 +162,7 @@ namespace CommonGeometryFormulasCalculator
             picboxShape.BackgroundImage = Properties.Resources.Circle;
             lblCircleR.Visible = !lblCircleR.Visible;
             txtCircleR.Visible = !txtCircleR.Visible;
+            clearText();
         }
 
         private void rdoArea_CheckedChanged(object sender, EventArgs e)
@@ -160,6 +183,16 @@ namespace CommonGeometryFormulasCalculator
             lblPerimeterAnswer.Visible = !lblPerimeterAnswer.Visible;
             lblArea.Visible = !lblArea.Visible;
             lblAreaAnswer.Visible = !lblAreaAnswer.Visible;
+        }
+
+        private void btnCalculate_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         
