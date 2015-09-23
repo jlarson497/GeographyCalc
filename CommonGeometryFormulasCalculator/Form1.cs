@@ -56,6 +56,8 @@ namespace CommonGeometryFormulasCalculator
         }
         private void clearText()
         {
+            //THis method clears all the text that has been put in the textboxes
+            //it is used everytime the radio buttons switch, to keep them clear
             txtSquareS.Clear();
             txtTrapezoidA.Clear();
             txtTrapezoidB.Clear();
@@ -75,6 +77,7 @@ namespace CommonGeometryFormulasCalculator
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
+            //clear buttons clears ALL the text
             clearText();
         }
 
@@ -85,6 +88,12 @@ namespace CommonGeometryFormulasCalculator
 
         private void rdoRectangle_CheckedChanged(object sender, EventArgs e)
         {
+            //when the radiobutton Rectangle is selected, the image in the picbox changes to a rectangle
+            //and the textboxes and labels needed for rectangle calculations are displayed and all text 
+            //is cleared -- so that if you switch shapes and switch back all the values are cleared.
+            //This prevents the form from holding old values for unnecessarily long times.
+            //This convention follows for all the following RadioButton[Shape] selections, so
+            //comments that would be copied and pasted are omitted
             picboxShape.BackgroundImage = Properties.Resources.Rectangle;
             lblRectL.Visible = !lblRectL.Visible;
             lblRectW.Visible = !lblRectW.Visible;
@@ -195,6 +204,40 @@ namespace CommonGeometryFormulasCalculator
             this.Close();
         }
 
-        
+        private int modulusMath(int dividend, int divisor)
+        {
+            int modulo = dividend % divisor;
+            return modulo;
+        }
+
+        private int randomGenerator(int bottom, int top)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(bottom, top);
+            return randomNumber;
+        }
+
+        private void btnModulo_Click(object sender, EventArgs e)
+        {
+            int dividend = Convert.ToInt16(txtDividend.Text);
+            int divisor = Convert.ToInt16(txtDivisor.Text);
+
+            int modulus = modulusMath(dividend, divisor);
+
+            txtModulo.Text = Convert.ToString(modulus);
+            txtDividend.Focus();
+
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            int bottom = Convert.ToInt16(txtRandomBot.Text);
+            int top = Convert.ToInt16(txtRandomTop.Text);
+
+            int newRandom = randomGenerator(bottom, top);
+            txtRandomNumber.Text = Convert.ToString(newRandom);
+            txtRandomBot.Focus();
+        }
+
     }
 }

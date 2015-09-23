@@ -80,6 +80,20 @@
             this.lblArea = new System.Windows.Forms.Label();
             this.lblPerimeterAnswer = new System.Windows.Forms.Label();
             this.lblAreaAnswer = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDividend = new System.Windows.Forms.TextBox();
+            this.txtDivisor = new System.Windows.Forms.TextBox();
+            this.txtModulo = new System.Windows.Forms.TextBox();
+            this.btnModulo = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtRandomTop = new System.Windows.Forms.TextBox();
+            this.txtRandomBot = new System.Windows.Forms.TextBox();
+            this.txtRandomNumber = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnGenerate = new System.Windows.Forms.Button();
             this.grpAP.SuspendLayout();
             this.grpShape.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxShape)).BeginInit();
@@ -576,6 +590,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(581, 611);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -634,6 +649,123 @@
             this.lblAreaAnswer.Text = "                  ";
             this.lblAreaAnswer.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(209, 475);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Dividend: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(219, 501);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Divisor: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(211, 529);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Modulus: ";
+            // 
+            // txtDividend
+            // 
+            this.txtDividend.Location = new System.Drawing.Point(270, 472);
+            this.txtDividend.Name = "txtDividend";
+            this.txtDividend.Size = new System.Drawing.Size(31, 20);
+            this.txtDividend.TabIndex = 14;
+            // 
+            // txtDivisor
+            // 
+            this.txtDivisor.Location = new System.Drawing.Point(270, 501);
+            this.txtDivisor.Name = "txtDivisor";
+            this.txtDivisor.Size = new System.Drawing.Size(31, 20);
+            this.txtDivisor.TabIndex = 15;
+            // 
+            // txtModulo
+            // 
+            this.txtModulo.Location = new System.Drawing.Point(270, 526);
+            this.txtModulo.Name = "txtModulo";
+            this.txtModulo.ReadOnly = true;
+            this.txtModulo.Size = new System.Drawing.Size(31, 20);
+            this.txtModulo.TabIndex = 16;
+            // 
+            // btnModulo
+            // 
+            this.btnModulo.Location = new System.Drawing.Point(209, 554);
+            this.btnModulo.Name = "btnModulo";
+            this.btnModulo.Size = new System.Drawing.Size(108, 23);
+            this.btnModulo.TabIndex = 17;
+            this.btnModulo.Text = "Calculate Modulus";
+            this.btnModulo.UseVisualStyleBackColor = true;
+            this.btnModulo.Click += new System.EventHandler(this.btnModulo_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(455, 475);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Generate a number between:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(518, 504);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(25, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "and";
+            // 
+            // txtRandomTop
+            // 
+            this.txtRandomTop.Location = new System.Drawing.Point(550, 497);
+            this.txtRandomTop.Name = "txtRandomTop";
+            this.txtRandomTop.Size = new System.Drawing.Size(50, 20);
+            this.txtRandomTop.TabIndex = 20;
+            // 
+            // txtRandomBot
+            // 
+            this.txtRandomBot.Location = new System.Drawing.Point(458, 498);
+            this.txtRandomBot.Name = "txtRandomBot";
+            this.txtRandomBot.Size = new System.Drawing.Size(50, 20);
+            this.txtRandomBot.TabIndex = 21;
+            // 
+            // txtRandomNumber
+            // 
+            this.txtRandomNumber.Location = new System.Drawing.Point(554, 556);
+            this.txtRandomNumber.Name = "txtRandomNumber";
+            this.txtRandomNumber.Size = new System.Drawing.Size(45, 20);
+            this.txtRandomNumber.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(455, 559);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Random Number: ";
+            // 
+            // btnGenerate
+            // 
+            this.btnGenerate.Location = new System.Drawing.Point(458, 526);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(104, 23);
+            this.btnGenerate.TabIndex = 24;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
             // lblRhombusB
             // 
             this.AcceptButton = this.btnCalculate;
@@ -641,6 +773,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(668, 646);
+            this.Controls.Add(this.btnGenerate);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtRandomNumber);
+            this.Controls.Add(this.txtRandomBot);
+            this.Controls.Add(this.txtRandomTop);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnModulo);
+            this.Controls.Add(this.txtModulo);
+            this.Controls.Add(this.txtDivisor);
+            this.Controls.Add(this.txtDividend);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAreaAnswer);
             this.Controls.Add(this.lblPerimeterAnswer);
             this.Controls.Add(this.lblArea);
@@ -717,6 +863,20 @@
         private System.Windows.Forms.TextBox txtTriangleH;
         private System.Windows.Forms.TextBox txtTriangleB;
         private System.Windows.Forms.PictureBox picboxShape;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDividend;
+        private System.Windows.Forms.TextBox txtDivisor;
+        private System.Windows.Forms.TextBox txtModulo;
+        private System.Windows.Forms.Button btnModulo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtRandomTop;
+        private System.Windows.Forms.TextBox txtRandomBot;
+        private System.Windows.Forms.TextBox txtRandomNumber;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnGenerate;
     }
 }
 
